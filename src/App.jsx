@@ -5,6 +5,7 @@ import ComParans from './components/basicos/ComParametro'
 import Aleatorio from './components/basicos/Aleatorio'
 import Card from './components/layout/Card'
 import Primeiro from './components/basicos/Primeiro'
+import Familia from './components/basicos/Familia'
 
 export default () => {
     return(
@@ -13,7 +14,11 @@ export default () => {
             <h1>FUNDAMENTOS REACT</h1>
             
             <div className="Cards"> 
-            
+
+                <Card titulo="#5 - Componente com Filhos" color="#00C8F8">
+                    <Familia sobrenome="Leles"/>
+                </Card>
+                
                 <Card titulo="#4 - Desafio Aleatorio" color="#FA6900">
                     <h1>Valor Aleatorio</h1>
                     <Aleatorio min={1} max={60}/>
@@ -38,6 +43,7 @@ export default () => {
             <Card titulo="#1 - Primeiro Componente" color="#588C73">
                 <Primeiro/>
             </Card>
+
             </div>
         </div>
     )
