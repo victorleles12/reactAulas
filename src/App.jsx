@@ -9,6 +9,9 @@ import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import ListaProduto from './components/repeticao/ListaProdutos'
+import Condicional from './components/condicional/ParOuImpar'
+import Cond from './components/condicional/UsuarioInfo'
+    
 
 export default () => {
     return(
@@ -18,7 +21,13 @@ export default () => {
             
             <div className="Cards"> 
 
-            <Card titulo="#7 - Exercicio Repetição" color="#3a9ad9">
+                <Card titulo="#8 - Renderização Condicional" color="#982395">
+                    <Condicional numero={11}></Condicional>
+                    <Cond usuario={{ nome: 'Fernando' }} ></Cond>
+                    <Cond usuario={{ email: 'victor.leles@' }} ></Cond>
+                </Card>
+
+                <Card titulo="#7 - Exercicio Repetição" color="#3a9ad9">
                     <ListaProduto></ListaProduto>
                 </Card>
 
