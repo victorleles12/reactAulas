@@ -11,6 +11,9 @@ import ListaAlunos from './components/repeticao/ListaAlunos'
 import ListaProduto from './components/repeticao/ListaProdutos'
 import Condicional from './components/condicional/ParOuImpar'
 import Cond from './components/condicional/UsuarioInfo'
+import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import Input from './components/formulario/input'
     
 
 export default () => {
@@ -20,6 +23,18 @@ export default () => {
             <h1>FUNDAMENTOS REACT</h1>
             
             <div className="Cards"> 
+
+                <Card titulo="#11 - Componente Controlado (Input)" color="#e45f56">
+                    <Input></Input>
+                </Card>
+
+                 <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
+                    <IndiretaPai></IndiretaPai>
+                </Card>
+
+                <Card titulo="#9 - Comunicação Direta" color="#59323c">
+                    <DiretaPai></DiretaPai>
+                </Card>
 
                 <Card titulo="#8 - Renderização Condicional" color="#982395">
                     <Condicional numero={11}></Condicional>

@@ -8,7 +8,7 @@ export default () => {
     const listProd = Produtos.map((produtos, i) => {
         return (
        
-            <tr key={produtos.id} className={i%2==0? 'Par': ''}>
+            <tr key={produtos.id} className={i%2===0? 'Par': ''}>
                 <td>{produtos.id}</td>
                 <td>{produtos.produto}</td>
                 <td>{produtos.preco}</td>
