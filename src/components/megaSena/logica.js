@@ -1,18 +1,17 @@
-let controle = 7
-let numeros = []
+function sortfunction(a, b){
+    return (a - b)
+  }
 
 
-function gerarNumeros(qrde){
-    while (numeros.length < controle){
+function gerarNumeros(qrde, sorteio){
+    let numeros = []
+    while (numeros.length < sorteio){
     var aleatorio = Math.floor(Math.random() * qrde +1)
         if (numeros.indexOf(aleatorio) == -1)
             numeros.push(aleatorio)
-
     }
 
-    return numeros
+    console.log(numeros.sort(sortfunction))
 }
 
-
-
-console.log(gerarNumeros(7))
+gerarNumeros(60, 6)
